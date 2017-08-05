@@ -1,0 +1,40 @@
+# shopping-spa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA application</title>
+</head>
+<script src="libs/angular.min.js"></script>
+<script src="libs/angular-route.min.js"></script>
+<script src="app/app.js"></script>
+<script src="model/mobile.js"></script>
+<script src="model/tablets.js"></script>
+<script src="model/laptop.js"></script>
+<script src="model/headphones.js"></script>
+<script src="model/mouse.js"></script>
+<script src="model/printers.js"></script>
+<script src="controller/mobilecontroller.js"></script>
+<script src="controller/tabletcontroller.js"></script>
+<script src="controller/laptopscontroller.js"></script>
+<script src="controller/heaadphonescontroller.js"></script>
+<script src="controller/mousecontroller.js"></script>
+<script src="controller/printercontroller.js"></script>
+<script src="route/route.js"></script>
+<body ng-app="SPA">
+
+<ul id="jagriti">
+    <li><a ng-href="#/">Mobiles</a></li>
+    <li><a ng-href="#/tablets">Tablets</a></li>
+    <li><a ng-href="#/laptops">Laptops</a></li>
+    <li><a ng-href="#/earphones">Headphones</a></li>
+    <li><a ng-href="#/mouse">Mouse</a></li>
+    <li><a ng-href="#/printers">Printers</a></li>
+    <ul>
+        <div id="main">
+            <ng-view></ng-view>
+        </div>
+    </ul>
+</ul>
+    </body>
+</html>
